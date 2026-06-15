@@ -1,1 +1,0 @@
-# Kopie-zapasowe-i-odzyskiwanie-danych
