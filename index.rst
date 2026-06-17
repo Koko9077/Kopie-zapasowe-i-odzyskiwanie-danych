@@ -105,8 +105,7 @@ Przykładowy prosty skrypt automatyzujący kopię jednej bazy:
 
 Taki skrypt jest prosty, ale nie zapewnia pełnego disaster recovery, bo nie obejmuje archiwizacji WAL i nie chroni całego klastra. Z tego powodu dla systemów krytycznych bardziej właściwe są narzędzia klasy Barman lub pgBackRest, które porządkują pełny proces backupu, retencji, testów i odtwarzania.
 
-Wnioski
+Podsumowanie
 --------------------------------------
 W rozdziale warto wyraźnie rozróżnić kopie logiczne i fizyczne, bo odpowiadają one na inne potrzeby eksploatacyjne. ``pg_dump`` i ``pg_dumpall`` są najlepsze do prostych eksportów i selektywnego odtwarzania, natomiast ``pg_basebackup`` z archiwizacją WAL jest podstawą odzyskiwania po poważnej awarii i realizacji PITR.
 
-Dobrą praktyką jest także zapisanie, że skuteczna strategia backupu nie kończy się na wykonaniu kopii, ale obejmuje testy odtwarzania, kontrolę retencji, ochronę plików backupu oraz automatyzację procesu. W laboratorium można więc pokazać zarówno proste polecenia wbudowane, jak i przykład narzędzia zewnętrznego, które organizuje cały cykl tworzenia i odtwarzania kopii zapasowych.
