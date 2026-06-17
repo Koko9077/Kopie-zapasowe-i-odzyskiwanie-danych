@@ -2,10 +2,6 @@
 Kopie zapasowe i odzyskiwanie danych 
 ====================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Spis treści:
-
 Wstęp
 -----
 Kopie zapasowe w PostgreSQL można podzielić na dwa główne nurty: kopie logiczne wykonywane narzędziami ``pg_dump`` i ``pg_dumpall`` [cite: 3] oraz kopie fizyczne całego klastra wykonywane m.in. przez ``pg_basebackup`` wraz z archiwizacją WAL dla odzyskiwania punktowego PITR (Point-in-Time Recovery)[cite: 3, 4]. Kopie logiczne są wygodne do odtwarzania pojedynczych obiektów i pojedynczych baz, natomiast kopie fizyczne są podstawą pełnego odtworzenia instancji, tablespaces i odzyskiwania po awariach[cite: 5].
