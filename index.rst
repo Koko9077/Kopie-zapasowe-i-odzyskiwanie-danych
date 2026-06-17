@@ -31,7 +31,7 @@ Tworzenie kopii zapasowych poszczególnych baz danych - mechanizmy wbudowane
 ---------------------------------------------------------------------------
 Do wykonania kopii pojedynczej bazy służy ``pg_dump``, które tworzy spójny zrzut nawet wtedy, gdy baza jest równocześnie używana przez innych użytkowników, i nie blokuje zwykłych operacji odczytu ani zapisu. Narzędzie obsługuje format tekstowy, custom, directory oraz tar, przy czym formaty archiwalne współpracują z ``pg_restore`` i pozwalają na selektywne odtwarzanie obiektów.
 
-Istotne jest to, że ``pg_dump`` wykonuje kopię tylko jednej bazy danych ; do eksportu całego klastra lub obiektów globalnych należy użyć ``pg_dumpall``. Format custom (``-Fc``) i directory (``-Fd``) są najbardziej elastyczne, bo pozwalają wybierać odtwarzane elementy, zmieniać kolejność odtwarzania, a w części scenariuszy także korzystać z odtwarzania równoległego.
+Istotne jest to, że ``pg_dump`` wykonuje kopię tylko jednej bazy danych. Format custom (``-Fc``) i directory (``-Fd``) są najbardziej elastyczne, bo pozwalają wybierać odtwarzane elementy, zmieniać kolejność odtwarzania, a w części scenariuszy także korzystać z odtwarzania równoległego.
 
 Przykładowe polecenia:
 
