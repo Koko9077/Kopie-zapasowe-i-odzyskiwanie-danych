@@ -1,7 +1,7 @@
 ====================================
 Kopie zapasowe i odzyskiwanie danych 
 ====================================
-**Autorzy:** Norbert Antonovitch, Michał Bednarczyk, Jan Balazs de Borbatviz
+:Autorzy: Norbert Antonovitch, Michał Bednarczyk, Jan Balazs de Borbatviz
 
 Wstęp
 -----
